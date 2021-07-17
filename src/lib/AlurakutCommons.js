@@ -24,7 +24,9 @@ export function AlurakutMenu({ githubUser }) {
   return (
     <AlurakutMenu.Wrapper isMenuOpen={isMenuOpen}>
       <div className="container">
-        <AlurakutMenu.Logo src={`${BASE_URL}/logoo.svg`} />
+        {/*<AlurakutMenu.Logo src={`${BASE_URL}/logo.svg`} />*/}
+        <AlurakutMenu.Logo src="/logo-schworkut.png" />
+ 
 
         <nav style={{ flex: 1 }}>
           {[{ name: 'Inicio', slug: '/'}, {name: 'Amigos', slug: '/amigos'}, {name: 'Comunidades', slug: '/comunidades'}].map((menuItem) => (
@@ -39,7 +41,7 @@ export function AlurakutMenu({ githubUser }) {
             Sair
           </a>
           <div>
-            <input placeholder="Pesquisar no Schwantes" />
+            <input placeholder="Pesquisar" />
           </div>
         </nav>
 
